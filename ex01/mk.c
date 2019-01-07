@@ -3,7 +3,8 @@
 int main()
 {
 	int i = 1;
-	while (i < 18)
+	printf("<div id=\"container\">\n<table>\n");
+	while (i < 19)
 	{
 		printf("<th>%d</th>\n", i);
 		i++;
@@ -11,7 +12,7 @@ int main()
 	i = 1;
 	while (i < 9)
 	{
-		printf("<tr>\n");
+		printf("<tr id=\"a%c\">\n", i + 'A' - 1);
 		int j = 0;
 		while (j < 18)
 		{
@@ -21,5 +22,6 @@ int main()
 		printf("</tr>\n");
 		i++;
 	}
+	printf("</table>\n</div>\n");
 	return 0;
 }
