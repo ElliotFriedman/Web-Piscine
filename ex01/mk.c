@@ -15,7 +15,7 @@ int main()
 		int j = 0;
 		while (j < 18)
 		{
-			printf("<td>%d</td>\n", i);
+			printf("<td id=\"%c%c\">\n		<div>\n<pre id=\"t\">1.008</pre>\n<h3>\n	H\n	</h3>\n<p id=\"b\">\n		1\n</p>\n	</div>\n</td>\n", 'a' + i, 'a' + j);
 			j++;
 		}
 		printf("</tr>\n");

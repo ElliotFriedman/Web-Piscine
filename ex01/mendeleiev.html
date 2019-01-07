@@ -3,8 +3,12 @@
 	<head>
 		<style>
 table {
-		border-collapse: collapse;text-align: left;
+	border-collapse: collapse;text-align: left;
 	padding: 2px;
+}
+
+td:hover, td.selected {
+	background-color: #FFCF8B
 }
 
 table th {
@@ -15,10 +19,11 @@ table th {
 }
 
 table td {
-	border: 1px solid  black;
-	padding: 10px;
+	border: 1px solid black;
+	padding: 20px;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: blue;
 }
 
 #container {
@@ -26,6 +31,23 @@ table td {
 	background-color: white;
 
 }
+
+#t {
+	text-align: right;
+	font-size: 6px;
+	font-family: Arial;
+
+}
+
+#b {
+	text-align: left;
+	font-size: 6px;
+}
+
+#aa {
+	background-color: #FFFF00;
+}
+
 
 		</style>
 	</head>
@@ -54,8 +76,21 @@ table td {
 					<th>18</th>
 				</tr>
 				<tr>
-					<td>1</td>
-					<td>1</td>
+					<td id="aa">
+						<div>
+							<pre id="t">1.008</pre>
+							<h3>
+								H
+							</h3>
+							<p id="b">
+							1
+							</p>
+						</div>
+					</td>
+					<td>
+						<div>
+						</div>
+					</td>
 					<td>1</td>
 					<td>1</td>
 					<td>1</td>
