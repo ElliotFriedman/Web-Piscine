@@ -178,26 +178,58 @@ body {
 
 			#bottombar {
 				background-color: #A3FD92;
-				width: 500px;
-				height: 140px;
+				width: 600px;
+				height: 190px;
 				padding: 2px;
 				border-radius: 15px;
 				box-shadow: 8px 10px black;
 				position: relative;
 				top: -420px;
+				left: -50px;
 			}
 
 			p {
+				position: relative;
 				font-size: 20px;
 				margin-left: auto;
 				margin-right: auto;
 				display: block;
-
+				left: 20px;
 			}
 
 			#ital {
 
 				font-style: italic;
+			}
+
+			#bigfont {
+				font-size: 35px;
+			}
+
+			#shadow {
+				text-shadow: 3px 3px 3px #ff3333;
+			}
+
+			#respond {
+				position: relative;
+				font-size: 20px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				left: 20px;
+				top: -25px;
+			}
+
+			#text {
+				width: 400px;
+			}
+			#ikea {
+				width: 400px;
+					border: 10px;
+						border-color: red;
+							position: relative;
+								float: center;
+
 			}
 
 		</style>
@@ -211,8 +243,8 @@ body {
 			<div id="header">
 				<img id="headpic" src="resources/day_of_the_42.png"></img>
 				<img id="mglass" src="resources/loupe.png"></img>
-				<img id="reload" src="resources/reload.png"></img>
-				<img id="close" src="resources/close.gif"></img>
+				<a href="http://www.disney.com"><img id="reload" src="resources/reload.png"></img></a>
+				<a href="http://www.relaischateaux.com"><img id="close" src="resources/close.gif"></img></a>
 			</div>
 
 			<br>
@@ -227,7 +259,7 @@ body {
 			<div id="main">
 
 				<img id="cluster" src="resources/cluster.jpg"></img>
-
+				<a href="https://ikea.com"><div id="ikea"></div></a>
 
 			</div>
 
@@ -240,15 +272,16 @@ body {
 
 			<div id="bottombar">
 				<p id="para">
-				Vous entrez alors dans une grande piece remplie d'ordinateurs...&#10;
-				<p id="ital">
-				-Bonjour, vous êtes nouveau ici ?
-				</p>
+				Vous <a id="bigfont">entrez</a> alors dans une grande piece remplie <br><a id="shadow">d'ordinateurs...</a>
+				<br>
+				<a id="ital">
+					- Bonjour, vous êtes nouveau ici ?
+				</a>
 				</p>
 
-				<form>
-					<input></input>
-					<button></button>
+				<form id="respond"> 
+					<input id="text" maxlength="1000"></input>
+					<button>Respondre</button>
 				</form>
 			</div>
 		</div>
