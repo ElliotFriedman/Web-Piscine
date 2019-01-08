@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<style>
+
+body {
+	background-color: #505050;
+}
+			#container {
+				position: relative;
+				margin-left: auto;
+				margin-right: auto;
+				width: 1300px;
+
+			}
+
+			#header {
+				background-color: 	#909090;
+				width: 1300px;
+				height: 120px;
+				padding: 10px;
+				border-radius: 15px;
+				box-shadow: 8px 10px black;
+
+			}
+
+			#headpic {
+				width: 400px;
+				position: absolute;
+				top: 15px;
+				float: left;
+			}
+
+			#reload {
+				padding: 15px;
+				float: right;
+				position: absolute;
+				left: 1255px;
+				top: 2px;
+				width: 20px;
+			}
+
+			#close {
+				padding: 10px;
+				float: right;
+				position: absolute;
+				left: 1260px;
+				top: 95px;
+				width: 25px;
+			}
+
+			#mglass {
+				padding: 10px;
+				float: right;
+				position: absolute;
+				left: 1000px;
+				top: 4px;
+			}
+
+			#leftbar {
+				background-color: #909090;
+				width: 150px;
+				height: 350px;
+				position: relative;
+				margin-left: 5%;
+				border-radius: 15px;
+				box-shadow: 8px 10px black;
+
+			}
+
+			#rightbar {
+				background-color: #909090;
+				width: 140px;
+				height: 350px;
+				position: relative;
+				margin-right: 2%;
+				float: right;
+				top: -862px;
+				border-radius: 15px;
+				box-shadow: 8px 10px black;
+
+			}
+
+			#cluster {
+				float: center;
+				position: relative;
+				margin-left: auto;
+				margin-right: auto;
+				width: 870px;
+				top: -350px;
+				left: 230px;
+				border: 10px solid #909090;
+				border-radius: 15px;
+				box-shadow: 8px 10px black;
+			}
+
+			#arrow {
+				width: 60px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				padding: 5px;
+			}
+
+			#hand {
+				width: 60px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				padding: 3px;
+			}
+
+			#oeil {
+				width: 60px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				padding: 3px;
+				border: 5px solid red;
+			}
+			#outil {
+				width: 60px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				padding: 3px;
+			}
+
+			#chaticon {
+				width: 60px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				padding: 3px;
+			}
+
+			#book {
+				width: 70px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				padding: 6px;
+			}
+
+			#towel {
+				width: 70px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				padding: 6px;
+			}
+
+			#brick {
+				width: 100px;
+				height: 50px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				background-size: 20px;
+				background-repeat: repeat-y;
+				background-image: url("brick.jpg");
+				border: 5px solid red;
+			}
+
+			#backimage {
+				width:80%;
+				height:20%;
+				position:absolute;
+				background:transparent	url("resources/brick.jpg") repeat scroll;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				padding: 3px;
+				left: 10px;
+			}
+
+
+			#bottombar {
+				background-color: #A3FD92;
+				width: 500px;
+				height: 140px;
+				padding: 2px;
+				border-radius: 15px;
+				box-shadow: 8px 10px black;
+				position: relative;
+				top: -420px;
+			}
+
+			p {
+				font-size: 20px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+
+			}
+
+			#ital {
+
+				font-style: italic;
+			}
+
+		</style>
+
+
+	</head>
+
+	<body>
+		<div id="container">
+
+			<div id="header">
+				<img id="headpic" src="resources/day_of_the_42.png"></img>
+				<img id="mglass" src="resources/loupe.png"></img>
+				<img id="reload" src="resources/reload.png"></img>
+				<img id="close" src="resources/close.gif"></img>
+			</div>
+
+			<br>
+			<div id="leftbar">
+				<img id="arrow" src="resources/arrow.png"></img>
+				<img id="hand" src="resources/main.png"></img>
+				<img id="oeil" src="resources/oeil.png"></img>
+				<img id="outil" src="resources/outil.png"></img>
+				<img id="chaticon" src="resources/chat-icon.png"></img>
+			</div>
+
+			<div id="main">
+
+				<img id="cluster" src="resources/cluster.jpg"></img>
+
+
+			</div>
+
+			<div id="rightbar">
+				<img id="book" src="resources/book.png"></img>
+				<img id="towel" src="resources/towel.png"></img>
+				<div id="backimage"></div>
+
+			</div>
+
+			<div id="bottombar">
+				<p id="para">
+				Vous entrez alors dans une grande piece remplie d'ordinateurs...&#10;
+				<p id="ital">
+				-Bonjour, vous êtes nouveau ici ?
+				</p>
+				</p>
+
+				<form>
+					<input></input>
+					<button></button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

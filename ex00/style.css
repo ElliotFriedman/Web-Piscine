@@ -2,64 +2,49 @@ body {
 	background-color: pink;
 }
 
-#container {
-	width: 800px;
-	height: 800px;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 #header {
+	padding: 10px;
 	background-color: #66CCFF;
+	color: white;
 	text-align: center;
-	text-align: center;
+}
+
+#container {
+	width: 800px;
 	margin-left: auto;
 	margin-right: auto;
-	position: relative;
+	background-color: pink;
 }
-
-.hi {
-	padding: 10px;
-	text-align: center;
-	color: white;
-	font-size: 23;
-	position: absolute;
-}
-
 
 #content {
-	padding: 50px;
+	padding: 10px;
 }
 
 #nav {
 	width: 180px;
-	text-align: center;
-	border: 1px solid #ccc;
-	background-color: pink;
-}
-
-#nav h2 {
-	color: blue;
+	float: left;
 }
 
 #nav ul {
 	list-style-type: none;
-	padding: 0;
+	padding: 3px;
+}
+
+h1, h2, h3, h4 {
+
 }
 
 #main {
 	width: 600px;
-}
-
-
-#shop1 {
-	float: left;
-	width: 200px;
-}
-
-#shop2 {
 	float: right;
-	width: 200px;
+	display: block;
+}
+
+.column {
+	float: left;
+	width: 40%;
+	padding: 15px;
 }
 
 #ebay {
@@ -72,11 +57,27 @@ body {
 	max-height: 50%;
 }
 
-#footer {
-	text-align: right;
-	left: 700px;
-	bottom: 20px;
-	clear: both;
-	color: black;
-	font-size: 12;
+#shop-link {
+	width: 50%;
+	margin: 0 auto;
+	float: middle;
 }
+
+hr {
+	border: 3px solid black;
+	position: absolute;
+	width: 800px;
+}	
+
+#footer {
+	position:absolute;
+	bottom: 0;
+	width: 800px;
+	height: 50px;   /* Height of the footer */
+	background:#6cf;
+	padding: 8px;
+	background-color: #00CCFF;
+	text-align: right;
+	clear: both;
+}
+
