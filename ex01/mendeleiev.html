@@ -57,66 +57,98 @@ table tr th {
 	font-size: 12px;
 }
 
+/*column 18*/
+#br, #cr, #dr, #er, #fr, #gr, #hr{
+	background-color: #99c2ff;
+}
+
 #ba {
 	background-color: #ADFF2F;
 }
 
-tr #aD, #aE, #aF, #aG {
+/*first column*/
+#ca, #da, #ea, #fa, #ga, #ha {
+	background-color:  #ff9900;
+}
+
+/*second column*/
+#cb, #cb, #db, #eb, #fb, #gb, #hb, #ib{
 	background-color: #FFFF00;
 }
 
+/*second and third row to top, Green*/
+#aB, #aC, #eo, #ep, #eq,  #fp, #fq, #gq {
+	background-color: #1aff1a;
+}
+
+/*teal blue portion*/
+#dm, #el, #em, #en,  #fl, #fm, #fn, #fo,  #gl, #gm, #gn, #go, #gp, #hl, #hm, #hn, #ho, #hp{
+	background-color: #00ffcc;
+}
+
+/*No background color*/
+#hq {
+	background-color: #ffffff;
+}
+
+/*Red background in the middle of table*/
+#aD, #aE, #aF, #aG {
+	background-color:  #c86064;
+}
+
+/*under table hidden*/
 #aH, #ja, #jb, #jc, #ka, #kb, #kc {
 	visibility: hidden;
 }
 
 /*2nd to last table*/
 #aI {
-	background-color: 	#FF8C00;
+	background-color: #ffc162;
+}
+
+/*last table*/
+#aJ {
+	background-color: #ffb3cc;
 }
 
 td:hover, td.selected {
 	background-color: #FFCF8B
 }
-
-#bb, #bc, #bd, #bd, #be, #bf, #bg, #bh, #bi, #bj, #bk, #bl, #bm, #bn, #bo, #bp, #bq, #cc, #cd, #cd, #ce, #cf, #cg, #ch, #ci, #cj, #ck {
+/*hide everything in the middle*/
+#gc, #hc, #dc, #dd, #de, #df, #dg, #dh, #di, #dj, #dk, #dl{
 	visibility: hidden;
 }
-   h3 {
-	   text-align: center;
-	   font-size: 13;
-   }
-   p {
-	   font-size: 15;
 
-   }
-   /*
-	  table {
-		  border-collapse: collapse;
-		  margin-left: auto;
-		  margin-right: auto;
-		  text-align: left;
-		  padding: 2px;
-		  height: 10px;
-		  width: 10px;
-	  }
+/*hide everything in the middle*/
+#bb, #bc, #bd, #bd, #be, #bf, #bg, #bh, #bi, #bj, #bk, #bl, #bm, #bn, #bo, #bp, #bq, #cc, #cd, #cd, #ce, #cf, #cg, #ch, #ci, #cj, #ck, #cl {
+	visibility: hidden;
+}
 
-	  table th {
-		  border: 1px solid black;
-		  text-align: center;
-		  background-color: #008080;
-		  border-collapse: collapse;
-	  }
-	*/
-   /*
-	* {
-		border: red 1px solid;	
+h3 {
+	text-align: center;
+	font-size: 13;
+}
+p {
+	font-size: 15;
+}
 
-	}
-	*/
+#rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+h1 {
+	text-align: center;
+	font-size: 75;
+}
 		</style>
 	</head>
 
 	<body>
+		<h1><span id="rainbow">Ft_PeriodicTable</span></h1>
 		<div id="container">
 			<table>
 				<th>1</th>
