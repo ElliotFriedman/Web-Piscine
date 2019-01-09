@@ -1,21 +1,6 @@
-@media screen and (min-width: 480px) {
-  #leftsidebar {width: 200px; float: left;}
-  #main {margin-left: 216px;}
-}
-
-#container {
-	width: auto;
-	height: auto;
-	overflow-x: auto;
-	margin-left: auto;
-		margin-right: auto;
-
-}
-
 body {
 	background-image: url("dmitri.jpg");
 }
-
 table
 {
 	padding: 0px;
@@ -24,7 +9,6 @@ table
 	text-align: left;
 	margin: auto;
 }
-
 td
 {
 	height: 70px;
@@ -38,13 +22,100 @@ td
 	text-align: center;
 	position: relative;
 }
-
 td div
 {
 	height: 70px;
 	width: 70px;
 	overflow: hidden;
 }
-
 #t {
 	text-align: right;
+	font-size: 6px;
+	font-family: Arial;
+}
+table tr th {
+	border: 1px solid black;
+	text-align: center;
+	background-color: #008080;
+	border-collapse: collapse;
+	width: 15px;
+	height: 15px;
+	margin: 10px;
+}
+#b {
+	text-align: left;
+	font-size: 12px;
+}
+/*column 18*/
+#br, #cr, #dr, #er, #fr, #gr, #hr{
+	background-color: #99c2ff;
+}
+#ba {
+	background-color: #ADFF2F;
+}
+/*first column*/
+#ca, #da, #ea, #fa, #ga, #ha {
+	background-color:  #ff9900;
+}
+/*second column*/
+#cb, #cb, #db, #eb, #fb, #gb, #hb, #ib{
+	background-color: #FFFF00;
+}
+/*second and third row to top, Green*/
+#aB, #aC, #eo, #ep, #eq,  #fp, #fq, #gq {
+	background-color: #1aff1a;
+}
+/*teal blue portion*/
+#dm, #el, #em, #en,  #fl, #fm, #fn, #fo,  #gl, #gm, #gn, #go, #gp, #hl, #hm, #hn, #ho, #hp{
+	background-color: #00ffcc;
+}
+/*No background color*/
+#hq {
+	background-color: #ffffff;
+}
+/*Red background in the middle of table*/
+#aD, #aE, #aF, #aG {
+	background-color:  #c86064;
+}
+/*under table hidden*/
+#aH, #ja, #jb, #jc, #ka, #kb, #kc {
+	visibility: hidden;
+}
+/*2nd to last table*/
+#aI {
+	background-color: #ffc162;
+}
+/*last table*/
+#aJ {
+	background-color: #ffb3cc;
+}
+/*hide everything in the middle*/
+#gc, #hc, #dc, #dd, #de, #df, #dg, #dh, #di, #dj, #dk, #dl{
+	visibility: hidden;
+}
+/*hide everything in the middle*/
+#bb, #bc, #bd, #bd, #be, #bf, #bg, #bh, #bi, #bj, #bk, #bl, #bm, #bn, #bo, #bp, #bq, #cc, #cd, #cd, #ce, #cf, #cg, #ch, #ci, #cj, #ck, #cl {
+	visibility: hidden;
+}
+h3 {
+	text-align: center;
+	font-size: 13;
+}
+p {
+	font-size: 15;
+}
+#rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+h1 {
+	text-align: center;
+	font-size: 60;
+		padding: 20px;
+}
+td:hover, td.selected {
+	background-color: #FFCF8B
+}
