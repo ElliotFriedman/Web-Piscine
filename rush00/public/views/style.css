@@ -1,0 +1,25 @@
+body {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: pink;
+}
+
+h1 {
+	font-style: Times;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#footer {
+	position:absolute;
+	bottom: 0;
+	width: 800px;
+	height: 50px;   /* Height of the footer */
+	background:#6cf;
+	padding: 8px;
+	background-color: #00CCFF;
+	text-align: right;
+	clear: both;
+}
