@@ -6,7 +6,7 @@
   bottom: 0;
   right: 0;
   overflow: auto;
-	background-color: blue;
+	/*background-color: blue;*/
 }
 
 h1 {
@@ -15,6 +15,7 @@ h1 {
 	margin-right: auto;
 	text-align: center;
 	color: white;
+	padding: 5px;
 }
 
 #header {
@@ -25,7 +26,7 @@ h3 {
 	font-style: Times;
 	margin-left: auto;
 	margin-right: auto;
-	color: black;
+	color: white;
 }
 
 #footer {
@@ -50,11 +51,12 @@ h3 {
 
 #nav {
 	padding: 10px;
-	height: 50px;
+	height: 60px;
 	width: 70%;
-	background-color: red;
+	background-color: #59b300;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
 	/*text-align: left;*/
 }
 
@@ -75,7 +77,6 @@ h3 {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-
 }
 
 #text {
@@ -83,25 +84,25 @@ h3 {
 }
 
 #login {
-	position: relative;
-	text-color: red;
+	position: absolute;
+	color: white;
 	float: right;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	top: -40px;
-	right: 5px;
+	top: 10px;
+	right: 15px;
 }
 
 #cart {
-	position: relative;
-	text-color: red;
+	position: absolute;
+	color: white;
 	float: right;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	top: -40px;
-	right: 30px;
+	top: 10px;
+	right: 70px;
 }
 
 input {
@@ -109,19 +110,18 @@ input {
 	margin-left: auto;
 	margin-right: auto;
 }
-
-
 /*div for all login info*/
 #login-form {
 	position: relative;
 	height: 30%;
 	width: 15%;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 35%;
+	margin-right: 35%;
 	top: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
+	color: white;
 }
 
 #email {
@@ -138,15 +138,14 @@ button {
 	top: 40%;
 }
 
-
 #userinfo {
-	position: relative;
+	position: absolute;
 	border-color: red;
 	left: 50%;
 	top: 50%;
 	margin-left: 15%;
+	margin-right: 15%;
 	text-align: center;
-
 }
 
 #paddpass {
@@ -161,3 +160,74 @@ div {
     border: 1px solid red;
 }
 */
+
+#click-here {
+	color: white;
+}
+
+#cartmain {
+	position: fixed;
+	left: 25%;
+	right: 25%;
+	top: 250px;
+	width: 40%;
+	height: 90%;
+	background-color: white; /* #4ddbff;*/
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0.8;
+}
+
+#cartitems {
+	opacity: 0.5;
+	position: fixed;
+	display: block;
+	width: 40%;
+	height: 1000px;
+}
+
+#current-cart {
+	color: black;
+}
+
+#checkout {
+	position: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	right: 49%;
+	bottom: 70px;
+	top: auto;
+}
+
+@keyframes bgcolor {
+    0% {
+        background-color: #4ddbff
+    }
+
+		4% {
+			background-color: #4ddbff;
+		}
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 20s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
