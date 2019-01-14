@@ -1,6 +1,8 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="views/stylesheets/style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"></script>
+
 	</head>
 
 	<body>
@@ -44,10 +46,10 @@
               <input id="password" type="password"></input>
               <br>
               <p id="paddpass">Re - Enter your password</p>
-              <input id="re-password" type="password"></input>
+              <input name="pass" id="re-password" type="password"></input>
               <br>
               <!-- Use same id as the login button -->
-              <button  onClick="createuser.js" method="post" id="submit">Register</button>
+              <button  onclick="createuser()" method="post" id="submit">Register</button>
             </form>
 					</div>
 				</div>
@@ -60,5 +62,6 @@
 				</div>
 
 			</div>
+       <script type="text/javascript" src="views/js/createuser.js"></script>
 	</body>
 </html>
