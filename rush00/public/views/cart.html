@@ -11,18 +11,14 @@
 							</div>
 
 				<div id="nav">
-					<h3 id="category">Categories</h3>
-
-					<ul>
-						<!-- Dynamically Generate These -->
-						<script>
-						//have to figure out how to pull these from the database
-							for (var i = 0; i < 10; i++) {
-								//document.write("<li class=\"items\"id=\"" + "item_" + i + "\">Hello World!Have a nice day!</li>");
-							}
-
-						</script>
-					</ul>
+					<div class="dropdown">
+						<button class="dropButton">Categories</button>
+						<div class="dropdownContent">
+							<a href="#">Link 1</a>
+							<a href="#">Link 2</a>
+							<a href="#">Link 3</a>
+						</div>
+					</div>
           <form id="search">
 						<input id="text" maxlength="100"></input>
 						<button>search</button>

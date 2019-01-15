@@ -1,25 +1,30 @@
 #container {
 	width: 100%;
 	position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: auto;
+	font-family: Arial;
 	/*background-color: blue;*/
 }
 
 h1 {
-	font-style: Times;
+	font-size: 72px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 	color: white;
-	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/*padding: 5px;*/
 }
 
 #header {
-	padding: 15px;
+	padding: 5px;
+	margin: 0;
+	min-width: 900px;
 }
 
 h3 {
@@ -52,29 +57,76 @@ h3 {
 #nav {
 	padding: 10px;
 	height: 60px;
-	width: 70%;
+	width: 900px;
 	background-color: #59b300;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
+	border-radius: 15px 30px;
 	/*text-align: left;*/
 }
 
-#category {
-	position: absolute;
+/* Nav Bar */
+
+.dropdown {
 	float: left;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	width: 50%;
+	overflow: hidden;
 }
+
+.dropdown .dropButton {
+	font-size: 20px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+	top: 5px;
+}
+
+
+.navbar a:hover, .dropdown:hover .dropButton {
+	background-color: #316300;
+}
+
+.dropdownContent {
+	display: none;
+	position: absolute;
+	background-color: #59b300;
+	border-radius: 15px;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdownContent a {
+	float: none;
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdownContent a:hover {
+	background-color: #316300;
+}
+
+.dropdown:hover .dropdownContent {
+	display: block;
+}
+
+/* End Nav Bar */
+
+/* Search Bar */
 
 #search {
 	position: relative;
-	text-color: red;
 	width: 50%;
 	float: center;
 	text-align: center;
+	margin-top: 8px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -82,6 +134,40 @@ h3 {
 #text {
 	width: 400px;
 }
+
+input[type=text], select {
+	width: 100%;
+	padding: 15px 20px;
+	margin: 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 5px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+form button {
+    position: absolute;
+    margin: 0;
+    margin-top: -15px;
+    height: 40px;
+    width: 60px;
+}
+
+/* End Search */
 
 #login {
 	position: absolute;
@@ -198,6 +284,33 @@ div {
 	bottom: 70px;
 	top: auto;
 }
+
+/* Start Main */
+
+#mainContainer {
+	width: 930px;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+  }
+
+  .column {
+	flex: 50%;
+	padding: 0 4px;
+  }
+
+  .column img {
+	margin-top: 8px;
+	width: 300px;
+	height: 300px;
+	vertical-align: middle;
+  }
+
+/* End Main */
 
 @keyframes bgcolor {
     0% {
