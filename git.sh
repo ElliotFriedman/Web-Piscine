@@ -1,3 +1,4 @@
+git add day00/*
 rm .DS_Store
 git add day05/*
 git rm -rf day05/.git
