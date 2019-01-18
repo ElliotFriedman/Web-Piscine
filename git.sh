@@ -1,4 +1,6 @@
 git add day00/*
+git add day07/*
+git rm -rf day07/.git
 rm .DS_Store
 git add day05/*
 git rm -rf day05/.git
